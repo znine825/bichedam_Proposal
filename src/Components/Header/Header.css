@@ -1,0 +1,54 @@
+.header {
+    width: 1500px;
+    height: 125px;
+
+    background-color: #000000;
+}
+
+.header > p {
+    width: auto;
+    height: auto;
+
+    font-family: 'A2z';
+    font-weight: 900;
+    font-size: 30px;
+
+    margin: 0px;
+    margin-top: 30px;
+    padding: 0px;
+
+    color: white;
+    background-color: blue;
+}
+.header > div {
+    width: auto;
+    height: auto;
+
+    display: flex;
+
+    margin: 0px;
+    padding: 0px;
+}
+.header > div > div {
+    width: auto;
+    height: auto;
+
+    margin-top: 20px;
+    padding: 0px;
+
+    border-radius: 10px 10px 0px 0px;
+
+    background-color: red;
+}
+.header > div > div > p {
+    margin-top: 10px;
+    margin-bottom : 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+
+    font-family: 'A2z';
+    font-size: 16px;
+    font-weight: 600;
+
+    color: white;
+}
