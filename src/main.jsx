@@ -11,7 +11,7 @@ import Schedule from './Page/6.Schedule/Schedule.jsx'
 
 createRoot(document.getElementById('root')).render(
   <div>
-    <BrowserRouter>
+    <BrowserRouter basename="/bichedam_Proposal">
       <Routes>
 				<Route path="/" element={<Outline />}></Route>
         <Route path="/Overview" element={<Overview />}></Route>
