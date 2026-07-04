@@ -2,7 +2,7 @@
     width: 1500px;
     height: 125px;
 
-    background-color: #000000;
+    border-bottom: 1px solid #FFFFFF20 ;
 }
 
 .header > p {
@@ -10,45 +10,56 @@
     height: auto;
 
     font-family: 'A2z';
-    font-weight: 900;
+    font-weight: 800;
     font-size: 30px;
-
-    margin: 0px;
     margin-top: 30px;
-    padding: 0px;
 
     color: white;
-    background-color: blue;
 }
-.header > div {
+.menu {
     width: auto;
     height: auto;
 
     display: flex;
-
-    margin: 0px;
-    padding: 0px;
 }
-.header > div > div {
+.menu > a {
     width: auto;
     height: auto;
 
     margin-top: 20px;
-    padding: 0px;
+}
+.contents {
+    width: auto;
+    height: 39px;
 
     border-radius: 10px 10px 0px 0px;
-
-    background-color: red;
 }
-.header > div > div > p {
-    margin-top: 10px;
-    margin-bottom : 10px;
-    margin-left: 25px;
-    margin-right: 25px;
+.contents > p {
+    width: auto;
+    height: auto;
+
+    padding-top: 10px;
+    padding-bottom: 8px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    margin-bottom: 0px;
 
     font-family: 'A2z';
     font-size: 16px;
     font-weight: 600;
 
     color: white;
+}
+.contents > div {
+    position: relative;
+    height: 2px;
+    width: auto;
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    transform-Origin: center;
+    border-bottom : 2px solid #5B8DEF;
 }
