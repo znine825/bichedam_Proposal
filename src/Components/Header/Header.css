@@ -29,8 +29,9 @@
     margin-top: 20px;
 }
 .contents {
+    position: relative;
     width: auto;
-    height: 39px;
+    height: 38px;
 
     border-radius: 10px 10px 0px 0px;
 }
@@ -39,7 +40,7 @@
     height: auto;
 
     padding-top: 10px;
-    padding-bottom: 8px;
+    padding-bottom: 10px;
     padding-left: 25px;
     padding-right: 25px;
 
@@ -52,11 +53,11 @@
     color: white;
 }
 .contents > div {
-    position: relative;
-    height: 2px;
+    position: absolute;
+    height: 38px;
     width: auto;
 
-    bottom: 0;
+    bottom: 0px;
     left: 0;
     right: 0;
 

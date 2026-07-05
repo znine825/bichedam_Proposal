@@ -28,7 +28,6 @@ function Contents({ where, text }) {
             onMouseLeave={() => setHover(false)}
             style = {{ 
                 backgroundColor : where ? CS['Background']['on'] : hover ? '#FFFFFF10' : CS['Background']['off'],
-                borderBottom : `2px solid ${where ? CS['Border']['on'] : hover ? '#FFFFFF' : CS['Border']['off']}`,
                 transition: 'background-color 0.3s'
             }}
         >
@@ -38,10 +37,13 @@ function Contents({ where, text }) {
             }}>
                 { text }
             </p>
-             <motion.div
-                initial={{ scaleX: 0 }}
-                animate={{ scaleX: hover ? 1 : 0 }}
-                transition={{ duration: 0.3 }}
+            <motion.div
+                initial = {{ scaleX: 0 }}
+                animate = {{ scaleX: (where || hover) ? 1 : 0 }}
+                transition = {{ duration: 0.3 }}
+                style = {{ 
+                    borderBottom : `2px solid ${ where ? CS['Border']['on'] : hover ? '#5B8DEF' : CS['Border']['off'] }`,
+            }}
             />
         </div>
     )
