@@ -10,7 +10,7 @@ import Design from './Page/5.Design/Design.jsx'
 import Schedule from './Page/6.Schedule/Schedule.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <div>
+  <div style={{ transform: 'scale(0.9)', transformOrigin: 'top center' }}>
     <BrowserRouter basename="/bichedam_Proposal">
       <Routes>
 				<Route path="/" element={<Outline />}></Route>

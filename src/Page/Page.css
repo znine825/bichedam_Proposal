@@ -29,7 +29,7 @@ aside {
 .line {
     position: absolute;
     width: 2px;
-    height: 100vh;
+    height: calc(100vh - 20px);
 
     transform-origin: top;
     left: 250px;
@@ -39,6 +39,7 @@ aside {
 .contentsBody {
     position: absolute;
     width: 1500px;
+    height: calc(100vh - 125px);
     top: 60px;
     transform: translate(-50%, 0);
 
@@ -48,9 +49,14 @@ aside {
     gap: 100px;
     flex-direction: column;
 
-    height: calc(100vh - 60px - 125px - 100px);
+    -ms-overflow-style: none;  /* IE, Edge */
+    scrollbar-width: none;
     overflow-y: auto;
 }
 .contents {
     margin-left: 310px;
+    
+}
+.contentsBody::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera (webkit 기반) */
 }
