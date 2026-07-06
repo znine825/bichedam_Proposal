@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Outline_Text } from '../../Contents_Text.js'
+import { Outline_Text } from '../../JavaScript/Contents_Text.js'
 import Header from '../../Components/Header/Header.jsx'
 import Contents from '../../Components/Contents/Contents.jsx'
 import Title from '../../Components/Title/Title.jsx'

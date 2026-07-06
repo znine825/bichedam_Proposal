@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import { accentText } from '../../JavaScript/Funtion.jsx'
 
 import './Contents.css'
 
@@ -10,7 +11,7 @@ function Contents({title, count, text}) {
                 <p>{ count }</p>
                 <p>{ title }</p>
             </div>
-            <div>{ text }</div>
+            <div>{accentText(text)}</div>
         </div>
     )
 }
