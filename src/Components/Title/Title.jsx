@@ -1,7 +1,6 @@
 import { motion } from 'motion/react';
 
 import './Title.css'
-import Header from '../Header/Header.jsx'
 
 function Title({text1, text2, text3}) {
     return (

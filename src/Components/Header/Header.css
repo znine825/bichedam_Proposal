@@ -3,6 +3,7 @@
     height: 125px;
 
     border-bottom: 2px solid #FFFFFF20 ;
+    background-color: #161C28;
 }
 
 .header > p {
@@ -28,14 +29,14 @@
 
     margin-top: 20px;
 }
-.contents {
+.catalog {
     position: relative;
     width: auto;
     height: 38px;
 
     border-radius: 10px 10px 0px 0px;
 }
-.contents > p {
+.catalog > p {
     width: auto;
     height: auto;
 
@@ -52,7 +53,7 @@
 
     color: white;
 }
-.contents > div {
+.catalog > div {
     position: absolute;
     height: 38px;
     width: auto;
@@ -62,5 +63,5 @@
     right: 0;
 
     transform-Origin: center;
-    border-bottom : 2px solid #5B8DEF;
+    border-bottom : 1px solid #5B8DEF;
 }

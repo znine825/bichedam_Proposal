@@ -1,3 +1,5 @@
+import { motion } from 'motion/react';
+
 import './Diagnosis.css'
 import '../Page.css'
 import Header from '../../Components/Header/Header.jsx'
@@ -14,6 +16,13 @@ function Diagnosis() {
                         text2 = '현황'
                         text3 = '진단'
                     />
+                    <motion.div
+                        className = 'line'
+                        initial = {{ scaleY: 0 }}
+                        animate = {{ scaleY: 1 }}
+                        transition = {{ duration: 0.5, 
+                                        delay: 0.8,
+                                        ease: 'easeIn'}}></motion.div>
                 </aside>
             </div>
         </div>

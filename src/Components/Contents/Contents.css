@@ -1,0 +1,61 @@
+.contents {
+    position: relative;
+    width: 1110px;
+    height: auto;
+}
+.circle {
+    position: relative;
+    width: 10px;
+    height: 10px;
+
+    top: 0px;
+    left: 2px;
+
+    border-radius: 5px;
+
+    background-color: #5B8DEF;
+}
+.contents > div:nth-child(2) {
+    position: relative;
+    width: auto;
+    height: auto;
+
+    top: 15px;
+    left: 0px;
+
+    display: flex;
+    gap: 20px;
+}
+.contents > div:nth-child(2) > p:nth-child(1) {
+    position: relative;
+
+    font-size: 48px;
+    font-weight: 800;
+    font-family: 'A2z';
+
+    color: #5B8DEF;
+}
+
+.contents > div:nth-child(2) > p:nth-child(2) {
+    position: relative;
+
+    font-size: 32px;
+    font-weight: 800;
+    font-family: 'A2z';
+
+    margin-top: 16px;
+
+    color: white;
+}
+.contents > div:nth-child(3) {
+    position: relative;
+
+    margin-top: 30px;
+    
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'A2z';
+
+    color: white;
+}
+

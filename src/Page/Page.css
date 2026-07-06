@@ -1,28 +1,56 @@
 .header {
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 50%;
 
     transform: translate(-50%, 0);
+}
+.body {
+    position: fixed;
+    width: 1500px;
+    left: 50%;
+    
+    top: 125px;
+    
+    transform: translate(-50%, 0);
+}
+aside {
+    position: absolute;
+    height: calc(100vh - 125px);
+    width: 250px;
+
+    left: 0px;
 }
 .title {
     position: absolute;
     top: 60px;
     right: 60px;
 }
-.body {
-    position: relative;
-    width: 1500px;
-    left: 50%;
+.line {
+    position: absolute;
+    width: 2px;
+    height: 100vh;
 
-    top: 125px;
+    transform-origin: top;
+    left: 250px;
 
-    transform: translate(-50%, 0);
+    background-color: #FFFFFF20;
 }
-aside {
-    position: fixed;
-    height: calc(100vh - 125px);
-    width: 250px;
+.contentsBody {
+    position: absolute;
+    width: 1500px;
+    top: 60px;
+    transform: translate(-50%, 0);
 
-    border-right: 2px solid #FFFFFF20;
+    padding-bottom: 100px;
+
+    display: flex;
+    gap: 100px;
+    flex-direction: column;
+
+    height: calc(100vh - 60px - 125px - 100px);
+    overflow-y: auto;
+}
+.contents {
+    margin-left: 310px;
 }

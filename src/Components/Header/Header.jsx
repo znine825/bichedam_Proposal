@@ -19,12 +19,12 @@ const CS = {
     }
 };
 
-function Contents({ where, text }) {
+function Catalog({ where, text }) {
 
     const [hover, setHover] = useState(false);
 
     return (
-        <div className = 'contents'
+        <div className = 'catalog'
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
             style = {{ 
@@ -82,22 +82,22 @@ function Header({ page }) {
                 <p>비체담 웹사이트 리빌딩 제안서</p>
                 <div className = 'menu'>
                     <Link to="/">
-                        <Contents where = { Select[0] } text = '목차' />
+                        <Catalog where = { Select[0] } text = '목차' />
                     </Link>
                     <Link to="/Overview">
-                        <Contents where = { Select[1] } text = '개요' />
+                        <Catalog where = { Select[1] } text = '개요' />
                     </Link>
                     <Link to="/Diagnosis">
-                        <Contents where = { Select[2] } text = '진단' />
+                        <Catalog where = { Select[2] } text = '진단' />
                     </Link>
                     <Link to="/Direction">
-                        <Contents where = { Select[3] } text = '방향' />
+                        <Catalog where = { Select[3] } text = '방향' />
                     </Link>
                     <Link to="/Design">
-                        <Contents where = { Select[4] } text = '디자인' />
+                        <Catalog where = { Select[4] } text = '디자인' />
                     </Link>
                     <Link to="/Schedule">
-                        <Contents where = { Select[5] } text = '일정' />
+                        <Catalog where = { Select[5] } text = '일정' />
                     </Link>
                 </div>
             </div>
