@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
+
 import './Header.css';
 
 const CS = {
@@ -75,7 +76,7 @@ function Header({ page }) {
         <motion.div
             initial = {{ opacity: 0, y: -20 }}
             animate = {{ opacity: 1, y: 0 }}
-            transition = {{ duration: 1 }}
+            transition = {{ duration: 0.7 }}
         >
             <div className = 'header'>
                 <p>비체담 웹사이트 리빌딩 제안서</p>

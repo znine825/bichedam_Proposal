@@ -1,0 +1,28 @@
+.header {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+
+    transform: translate(-50%, 0);
+}
+.title {
+    position: absolute;
+    top: 60px;
+    right: 60px;
+}
+.body {
+    position: relative;
+    width: 1500px;
+    left: 50%;
+
+    top: 125px;
+
+    transform: translate(-50%, 0);
+}
+aside {
+    position: fixed;
+    height: calc(100vh - 125px);
+    width: 250px;
+
+    border-right: 2px solid #FFFFFF20;
+}

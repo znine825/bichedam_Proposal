@@ -95,3 +95,7 @@ input, textarea, select, button {
   font: inherit;
   color: inherit;
 }
+
+p {
+    white-space: nowrap;
+}
