@@ -21,7 +21,7 @@ aside {
 
     left: 0px;
 }
-.title {
+.index {
     position: absolute;
     top: 60px;
     right: 60px;
@@ -46,14 +46,13 @@ aside {
     padding-bottom: 100px;
 
     display: flex;
-    gap: 100px;
     flex-direction: column;
 
     -ms-overflow-style: none;  /* IE, Edge */
     scrollbar-width: none;
     overflow-y: auto;
 }
-.contents {
+.text, .title, .subtitle, .images1, .images2, .images3, .images4 {
     margin-left: 310px;
     
 }

@@ -1,8 +1,8 @@
 import { motion } from 'motion/react';
 import { Outline_Text } from '../../JavaScript/Contents_Text.js'
 import Header from '../../Components/Header/Header.jsx'
-import Contents from '../../Components/Contents/Contents.jsx'
-import Title from '../../Components/Title/Title.jsx'
+import Index from '../../Components/Index/Index.jsx'
+import { Text, Title, Subtitle, Margin } from '../../Components/Common/Common.jsx'
 
 import './Outline.css'
 import '../Page.css'
@@ -13,7 +13,7 @@ function Outline() {
             <Header page = '/'/>
             <div className = 'body'>
                 <aside>
-                    <Title 
+                    <Index 
                         text1 = 'OUTLINE · 01'
                         text2 = '제안'
                         text3 = '목차'
@@ -33,12 +33,15 @@ function Outline() {
                     transition = {{ duration: 0.5,
                                     delay: 0.5}}>
                     {Outline_Text.map((item) => (
-                        <Contents 
-                            key={item.count}
-                            title={item.title}
-                            count={item.count}
-                            text={item.text}
-                        />
+                        <div>
+                            <Title 
+                                key={item.count}
+                                title={item.title}
+                                count={item.count}
+                                text={item.text}
+                            />
+                            <Margin distance_w = '100%' distance_h = '100px'/>
+                        </div>
                     ))}
                 </motion.div>  
             </div>

@@ -97,5 +97,5 @@ input, textarea, select, button {
 }
 
 p {
-    white-space: nowrap;
+    white-space: normal;
 }

@@ -1,11 +1,11 @@
 import { motion } from 'motion/react';
 
-import './Title.css'
+import './Index.css'
 
-function Title({text1, text2, text3}) {
+function Index({text1, text2, text3}) {
     return (
         <motion.div 
-            className = 'title'
+            className = 'index'
             initial = {{ opacity: 0, x: -20 }}
             animate = {{ opacity: 1, x: 0 }}
             transition = {{ duration: 0.7 }}>
@@ -19,4 +19,4 @@ function Title({text1, text2, text3}) {
     )
 }
 
-export default Title
+export default Index

@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 import './Diagnosis.css'
 import '../Page.css'
 import Header from '../../Components/Header/Header.jsx'
-import Title from '../../Components/Title/Title.jsx'
+import Index from '../../Components/Index/Index.jsx'
 
 function Diagnosis() {
     return (
@@ -11,7 +11,7 @@ function Diagnosis() {
             <Header page = '/Diagnosis'/>
             <div className = 'body'>
                 <aside>
-                    <Title 
+                    <Index 
                         text1 = 'DIAGNOSIS · 03'
                         text2 = '현황'
                         text3 = '진단'

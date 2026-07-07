@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 import './Design.css'
 import '../Page.css'
 import Header from '../../Components/Header/Header.jsx'
-import Title from '../../Components/Title/Title.jsx'
+import Index from '../../Components/Index/Index.jsx'
 
 function Design() {
     return (
@@ -11,7 +11,7 @@ function Design() {
             <Header page = '/Design'/>
             <div className = 'body'>
                 <aside>
-                    <Title 
+                    <Index 
                         text1 = 'DESIGN · 05'
                         text2 = '디자인'
                         text3 = '컨셉'

@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 import './Schedule.css'
 import '../Page.css'
 import Header from '../../Components/Header/Header.jsx'
-import Title from '../../Components/Title/Title.jsx'
+import Index from '../../Components/Index/Index.jsx'
 
 function Schedule() {
     return (
@@ -11,7 +11,7 @@ function Schedule() {
             <Header page = '/Schedule'/>
             <div className = 'body'>
                 <aside>
-                    <Title 
+                    <Index 
                         text1 = 'SCHEDULE · 06'
                         text2 = '개발'
                         text3 = '일정'

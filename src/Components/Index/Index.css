@@ -1,16 +1,16 @@
-.title {
+.index {
     height: 193px;
     width: 190px;
 }
 
-.title > div {
+.index > div {
     position: absolute;
     right: 0px;
 
     display: flex;
     gap: 10px;
 }
-.title > div > div {
+.index > div > div {
     position: relative;
     width: 50px;
     height: 1px;
@@ -19,26 +19,29 @@
 
     background-color: #5B8DEF;
 }
-.title > div > p {
+.index > div > p {
     font-size: 16px;
     font-weight: 500;
     font-family: 'A2z';
 
+    white-space: nowrap;
+
     color: #5B8DEF;
+
 }
-.title > p:nth-child(2), .title > p:nth-child(3) {
+.index > p:nth-child(2), .index > p:nth-child(3) {
     position: absolute;
     right: 0px;
     font-size: 64px;
     font-weight: 800;
     font-family: 'A2z';
 }   
-.title > p:nth-child(2) {
+.index > p:nth-child(2) {
     top: 39px;
 
     color: white;
 }
-.title > p:nth-child(3) {
+.index > p:nth-child(3) {
     top: 114px;
     color: #5B8DEF;
 }

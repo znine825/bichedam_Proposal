@@ -1,5 +1,5 @@
 export function accentText(text) {
-    const parts = text.split(/(\*\*.*?\*\*)/g);
+    const parts = text.split(/(\*\*.*?\*\*|\/\/)/g);
     return parts.map((part, i) => {
         if (part.startsWith('**') && part.endsWith('**')) {
             return (
@@ -8,6 +8,9 @@ export function accentText(text) {
                 </span>
             );
         }
-        return part;
+        if (part === '//') {
+            return <br key={i} />;
+        }
+        return part; 
     });
 }
