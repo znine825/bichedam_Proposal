@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
-import './viewTitle.css'
+import './ViewTitle.css'
 
 function ViewTitle({ scroll, mode, setMode, contents }) {
 
