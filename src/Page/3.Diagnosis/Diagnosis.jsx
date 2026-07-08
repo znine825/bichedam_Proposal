@@ -3,7 +3,6 @@ import { useState, useEffect, useRef } from 'react';
 import Header from '../../Components/Header/Header.jsx'
 import Footer from '../../Components/Footer/Footer.jsx'
 import Index from '../../Components/Index/Index.jsx'
-import ViewMode from '../../Components/ViewMode/ViewMode.jsx'
 import ViewTitle from '../../Components/ViewTitle/ViewTitle.jsx'
 import { Text, Title, Subtitle, Margin, Images1, Images2, Images3 } from '../../Components/Common/Common.jsx'
 import { Diagnosis_ViewTitle } from '../../JavaScript/Contents_Text.js'
