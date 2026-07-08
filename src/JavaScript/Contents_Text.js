@@ -25,3 +25,33 @@ export const Outline_Text = [
         text: '2026년 9월 ~ 2027년 1월으로 생각하고 있으며 최대한 빠르게 완성하도록 노력하겠습니다.'
     }
 ];
+
+export const Overview_ViewTitle = [
+    {
+        title : '문제인식',
+        text : ['콘텐츠 완성도', '비효율적 디자인']
+    },
+    {
+        title : '해결방안',
+        text : ['리액트', '디자인 개편']
+    },
+    {
+        title : '기대효과',
+        text : ['편의성 향상', '전문성 강화', '효율성 향상']
+    }
+]
+
+export const Diagnosis_ViewTitle = [
+    {
+        title : '기술적 문제',
+        text : ['News 슬라이드', 'Pipeline 스크롤', '공시정보 비드백', '추천순 정렬 기능', '문의하기 오류메시지', '사진 비율 최적화']
+    },
+    {
+        title : '디자인적 문제',
+        text : ['통합되지않은 마진', '컴포넌트의 재활용']
+    },
+    {
+        title : '콘텐츠 완성도 문제',
+        text : ['기본적인 문법, 오타', '링크연결 문제']
+    }
+]

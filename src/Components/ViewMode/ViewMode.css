@@ -1,0 +1,55 @@
+.viewMode {
+    position: absolute;
+    width: 190px;
+    height: 35px;
+
+    display: flex;
+
+    z-index: 5;
+}
+.viewMode:hover {
+    cursor: pointer;
+}
+.viewMode > div:not(.activeBg) {
+    position: relative;
+    width: 95px;
+    height: 100%;
+    border: 1px solid #FFFFFF20;
+    z-index: 1; /* 배경 위에 위치 */
+}
+.viewMode > div:nth-child(2) {
+    border-radius: 10px 0px 0px 10px;
+}
+
+.viewMode > div:nth-child(3) {
+    border-radius: 0px 10px 10px 0px;
+}
+.viewMode > div > p {
+    position: absolute;
+    width: auto;
+    height: auto;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: color 0.3s;
+
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'A2z';
+
+    white-space: nowrap;
+}
+.activeBg {
+    position: absolute;
+    width: 95px;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+
+    border-radius: 10px;
+
+    background-color: #5B8DEF;
+    z-index: 0;
+}

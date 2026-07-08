@@ -1,13 +1,18 @@
 import { motion } from 'motion/react';
-import { Outline_Text } from '../../JavaScript/Contents_Text.js'
+import { useState, useEffect, useRef } from 'react';
 import Header from '../../Components/Header/Header.jsx'
+import Footer from '../../Components/Footer/Footer.jsx'
 import Index from '../../Components/Index/Index.jsx'
-import { Text, Title, Subtitle, Margin } from '../../Components/Common/Common.jsx'
+import ViewMode from '../../Components/ViewMode/ViewMode.jsx'
+import ViewTitle from '../../Components/ViewTitle/ViewTitle.jsx'
+import { Text, Title, Subtitle, Margin, Images1, Images2, Images3 } from '../../Components/Common/Common.jsx'
+import { Outline_Text } from '../../JavaScript/Contents_Text.js'
 
 import './Outline.css'
 import '../Page.css'
 
 function Outline() {
+
     return (
         <div>
             <Header page = '/'/>

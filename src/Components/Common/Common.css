@@ -118,15 +118,6 @@
     width: 1000px;
     height: auto;
 }
-.images1 > div:nth-child(3) > p {
-    width: 1000px;
-
-    font-size: 19px;
-    font-weight: 500;
-    font-family: 'A2z';
-
-    color: white;
-}
 .images2 {
     width: 1150px;
     height: auto;

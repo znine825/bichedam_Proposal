@@ -38,7 +38,7 @@ aside {
 }
 .contentsBody {
     position: absolute;
-    width: 1500px;
+    width: 1190px;
     height: calc(100vh - 125px);
     top: 60px;
     transform: translate(-50%, 0);
@@ -52,10 +52,17 @@ aside {
     scrollbar-width: none;
     overflow-y: auto;
 }
-.text, .title, .subtitle, .images1, .images2, .images3, .images4 {
+.contentsBody {
     margin-left: 310px;
     
 }
 .contentsBody::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera (webkit 기반) */
+}
+.viewMode {
+    top: 283px;
+}
+.viewTitle {
+    top: 358px;
+    right: 60px;
 }

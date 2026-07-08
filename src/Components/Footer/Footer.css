@@ -1,0 +1,41 @@
+.footer {
+    position: relative;
+    width: 1190px;
+    height: 100px;
+    display: flex;
+
+    border-top: 1px solid #FFFFFF20;;
+}
+.footer > p {
+    top: 30px;
+
+    color: #FFFFFF50;
+}
+.footer > p:nth-child(1) {
+    position: absolute;
+    left: 0px;
+
+    font-family: 'A2z';
+    font-weight: 200;
+    font-size: 15px;
+
+}
+.footer > p:nth-child(2) {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    font-family: 'A2z';
+    font-weight: 200;
+    font-size: 12px;
+
+}
+.footer > p:nth-child(3) {
+    position: absolute;
+    right: 0px;
+
+    font-family: 'A2z';
+    font-weight: 200;
+    font-size: 12px;
+
+}

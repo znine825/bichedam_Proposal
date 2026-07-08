@@ -1,12 +1,36 @@
 import { motion } from 'motion/react';
+import { useState, useEffect, useRef } from 'react';
 import Header from '../../Components/Header/Header.jsx'
+import Footer from '../../Components/Footer/Footer.jsx'
 import Index from '../../Components/Index/Index.jsx'
+import ViewMode from '../../Components/ViewMode/ViewMode.jsx'
+import ViewTitle from '../../Components/ViewTitle/ViewTitle.jsx'
 import { Text, Title, Subtitle, Margin, Images1, Images2, Images3 } from '../../Components/Common/Common.jsx'
+import { Overview_ViewTitle } from '../../JavaScript/Contents_Text.js'
 
 import './Overview.css'
 import '../Page.css'
 
 function Overview() {
+
+    // let [view, setView] = useState(0); // 0 전체보기 1 따로보기
+    const scrollRef = useRef(null);
+    const [scrollPercent, setScrollPercent] = useState(0);
+
+    useEffect(() => {
+        const el = scrollRef.current;
+        if (!el) return;
+
+        const handleScroll = () => {
+            const maxScroll = el.scrollHeight - el.clientHeight;
+            const percent = maxScroll > 0 ? (el.scrollTop / maxScroll) * 100 : 0;
+            setScrollPercent(percent);
+        };
+
+        el.addEventListener('scroll', handleScroll);
+        return () => el.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
         <div>
             <Header page = '/Overview'/>
@@ -17,6 +41,7 @@ function Overview() {
                         text2 = '제안'
                         text3 = '개요'
                     />
+                    <ViewTitle scroll = { scrollPercent } contents = { Overview_ViewTitle } />
                 </aside>
                 <motion.div
                     className = 'line'
@@ -27,6 +52,7 @@ function Overview() {
                                     ease: 'easeIn'}}></motion.div>
                 <motion.div 
                     className = 'contentsBody'
+                    ref = { scrollRef }
                     initial = {{ opacity: 0, x: -20 }}
                     animate = {{ opacity: 1, x: 0 }}
                     transition = {{ duration: 0.5,
@@ -50,7 +76,7 @@ function Overview() {
                     <Margin distance_w = '100%' distance_h = '200px'/>
                     <Subtitle 
                         text1 = '01 - 2' 
-                        text2 = '콘텐츠 완성도'/>
+                        text2 = '비효율적인 디자인'/>
                     <Margin distance_w = '100%' distance_h = '30px'/>
                     <Text text = '동일한 카드형 컴포넌트가 웹사이트 전반에 걸쳐 **반복적으로 사용**되고 있습니다. 해당 요소는 마우스 오버 시 테두리 색상이 변경되어 상호작용이 가능한 버튼처럼 인식되지만, 실제로는 클릭 기능이 제공되지 않아 사용자의 혼란을 유발할 수 있습니다. ////특히 **판매처** 부분이 가장 큰 혼란을 유발하고 있습니다.'/>
                     <Margin distance_w = '100%' distance_h = '30px'/>
@@ -89,6 +115,8 @@ function Overview() {
                     <Margin distance_w = '100%' distance_h = '30px'/>
                     <Text text = '기존 비체담 웹사이트는 단순한 정보 나열 중심의 구조로 구성되어 있어, 방문자가 원하는 정보를 직관적으로 찾기 어렵고 페이지에 머무르는 시간이 짧다는 한계가 있었습니다. ////이를 해결하기 위해 정보 제공 중심에서 사용자 경험 중심으로 디자인을 개편하고자 합니다.'/>
 
+
+
                     <Margin distance_w = '100%' distance_h = '200px'/>
                     <Title 
                         title = '기대효과'
@@ -112,6 +140,9 @@ function Overview() {
                         text2 = '장기적인 유지보수 효율성 향상'/>
                     <Margin distance_w = '100%' distance_h = '30px'/>
                     <Text text = 'React의 컴포넌트 기반 구조는 향후 콘텐츠 추가나 기능 확장 시 전체를 수정하지 않고 필요한 부분만 빠르게 업데이트할 수 있어 운영 비용과 시간을 절감할 수 있습니다.'/>
+                    
+                    <Margin distance_w = '100%' distance_h = '200px'/>
+                    <Footer title = '• 제안 개요'/>
                 </motion.div>  
             </div>
         </div>
