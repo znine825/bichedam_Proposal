@@ -91,3 +91,25 @@ export function Images3({image1, image2, image3,
         </motion.div>
     )
 }
+
+export function MoodBoard({image1, image2, width, height,
+                           text1, text2}) {
+    return (
+        <div className = 'images2'>
+            <div>
+                <img src = { image1 }
+                     style = {{width : `${width}`, height : `${height}`}}></img>
+                <Margin distance_w = '100%' distance_h = '10px' />
+                <div><p className = 'imageP'
+                        style = {{width : `${width}`}}>{ accentText(text1) }</p></div>
+            </div>
+            <div>
+                <img src = { image2 }
+                     style = {{width : `${width}`, height : `${height}`}}></img>
+                <Margin distance_w = '100%' distance_h = '10px' />
+                <div><p className = 'imageP'
+                        style = {{width : `${width}`}}>{ accentText(text2) }</p></div>
+            </div>
+        </div>
+    )
+}

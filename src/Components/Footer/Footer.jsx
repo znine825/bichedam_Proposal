@@ -7,7 +7,7 @@ function Footer({ title }) {
     return (
         <div className = 'footer'>
             <p>{ title }</p>
-            <p>© 2026 ALL Rights Reserved</p>
+            <p>© 2026 DETAILED. ALL Rights Reserved.</p>
             <p>DETAILED</p>
         </div>
     )

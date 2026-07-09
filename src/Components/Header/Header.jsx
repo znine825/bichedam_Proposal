@@ -81,7 +81,7 @@ function Header({ page }) {
             <div className = 'header'>
                 <p>비체담 웹사이트 리빌딩 제안서</p>
                 <div className = 'menu'>
-                    <Link to="/">
+                    <Link to="/Outline">
                         <Catalog where = { Select[0] } text = '목차' />
                     </Link>
                     <Link to="/Overview">

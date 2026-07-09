@@ -1,0 +1,88 @@
+.home {
+    position: relative;
+    width: auto;
+
+    margin-top: 25%;
+    
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home > div, .home > a > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home > div:nth-child(1) > p {
+    margin-top: 5px;
+
+    font-family: 'A2z';
+    font-weight: 800;
+    font-size: 80px;
+
+    color: white;
+}
+.home > p:nth-child(2) {
+    width: 500px;
+    margin-top: 15px;
+
+    font-family: 'A2z';
+    font-weight: 400;
+    font-size: 24px;
+
+    text-align: center;
+
+    color: #FFFFFF80;
+}
+.home > a > div {
+    width: 200px;
+    height: 50px;
+
+    margin: 40px;
+    border-radius: 25px;
+
+    background-color: #5B8DEF;
+}
+.home > a > div > p {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+
+    font-family: 'A2z';
+    font-weight: 600;
+    font-size: 18px;
+
+    color: white;
+}
+
+.home > p:nth-child(4), .home > p:nth-child(5) {
+    width: 500px;
+    margin-top: 5px;
+
+    font-family: 'A2z';
+    font-weight: 400;
+    font-size: 18px;
+
+    text-align: center;
+
+    color: #FFFFFF40;
+}
+
+.glow {
+    position: absolute;
+    width: 1000px;
+    height: 1000px;
+
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, -50%);
+    
+    background: radial-gradient(circle, rgba(40, 64, 108, 0.3) 0%, rgba(91, 141, 239, 0) 50%);
+    
+    filter: blur(60px);
+    pointer-events: none; /* 클릭 이벤트 방해 안 하게 */
+    z-index: -1;
+}

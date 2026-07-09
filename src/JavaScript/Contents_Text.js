@@ -66,3 +66,18 @@ export const Direction_ViewTitle = [
         text : ['프론트엔드', '라우팅 / 렌더링', '배포', '콘텐츠 관리']
     }
 ]
+
+export const Design_ViewTitle = [
+    {
+        title : '와이어 프레임',
+        text : ['유한양행', 'GC녹십자', '대웅제약']
+    },
+    {
+        title : '동적 디자인',
+        text : ['Hover', 'Motion', 'Transition']
+    },
+    {
+        title : '반응형 디자인',
+        text : ['PC', 'Tablet', 'Mobile']
+    }
+]

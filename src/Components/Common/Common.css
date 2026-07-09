@@ -142,7 +142,7 @@
 .images2 > div > div:nth-child(3) {
     position: relative;
     height: auto;
-    width: 550px;
+    width: auto;
 
     left: 50%;
     transform: translate(-50%, 0);

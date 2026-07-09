@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 import './index.css'
+import Home from './Page/0.Home/Home.jsx'
 import Outline from './Page/1.Outline/Outline.jsx'
 import Overview from './Page/2.Overview/Overview.jsx'
 import Diagnosis from './Page/3.Diagnosis/Diagnosis.jsx'
@@ -30,7 +31,8 @@ function App() {
         <div style={{ transform: `scale(${scale})`, transformOrigin: 'top center' }}>
             <BrowserRouter basename="/bichedam_Proposal">
                 <Routes>
-                    <Route path="/" element={<Outline />}></Route>
+                    <Route path="/" element={<Home />}></Route>
+                    <Route path="/Outline" element={<Outline />}></Route>
                     <Route path="/Overview" element={<Overview />}></Route>
                     <Route path="/Diagnosis" element={<Diagnosis />}></Route>
                     <Route path="/Direction" element={<Direction />}></Route>

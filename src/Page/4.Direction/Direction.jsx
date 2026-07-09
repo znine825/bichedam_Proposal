@@ -101,6 +101,8 @@ function Direction() {
                     <Margin distance_w = '100%' distance_h = '30px'/>
                     <Text text = '지금 웹사이트의 유지보수 비용이 거의 발생하지 않고있다고 알고있습니다. 따라서 리빌딩되는 웹사이트 또한 지금 관리되고 있는 방식 (관리자 로그인을 통해 관리) 을 구현해 추가 비용이 발생하지 않도록 하겠습니다.////다만 기존 서버를 수정할 수 없는 경우 새로운 서버를 통해 호스팅을 해야하기 때문에 사용자 방문율에 따른 비용이 발생 할 수 있습니다.' />
                     
+
+                    
                     <Margin distance_w = '100%' distance_h = '200px'/>
                     <Title 
                         title = '기술스택 / 개발환경'
@@ -135,7 +137,9 @@ function Direction() {
                     <Text text = '//지금의 방식이 아닌 외부 CMS를 이용하게 되면 해킹의 위험에서 벗어날 수 있고, 어떤 외부 CMS를 이용하냐에 따라 지금 보다 더 높은 퀄리티의 글을 작성 할 수 있게됩니다.' />
                     <Text text = '//CMS 에는 여러 종류가 있습니다.// - Notion// - 그누보드 ( 지금 사용하는 것과 굉장히 유사 )// - 깃허브 ( 개발지식이 약간 필요 )' />
                     <Text text = '//어떤 CMS를 사용할지는 추후 협의를 통해 정할 것을 제안드립니다.' />
-
+                    
+                    <Margin distance_w = '100%' distance_h = '200px'/>
+                    <Footer title = '• 리빌딩 방향'/>
                 </motion.div>
             </div>
         </div>
