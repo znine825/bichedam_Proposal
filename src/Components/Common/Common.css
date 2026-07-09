@@ -112,6 +112,7 @@
     width: 1000px;
     height: 500px;
 
+    border: 3px solid #5B8DEF60;
     border-radius: 20px;
 }
 .images1 > div:nth-child(3) {

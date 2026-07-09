@@ -61,7 +61,7 @@ function Overview() {
                         count = '01'
                         text = '현재 웹사이트에서는 여러 **기술적 오류**와 **오래된 UI**가 반복적으로 발견되고 있습니다. 이러한 문제들은 단순한 불편을 넘어 사용자의 이탈과 신뢰 저하로 이어지고 있으며, 브랜드 이미지에도 직접적인 영향을 미칩니다. 아래는 실제로 확인된 대표적인 문제 사례입니다.'/>
                     
-                    <Margin distance_w = '100%' distance_h = '50px'/>
+                    <Margin distance_w = '100%' distance_h = '100px'/>
                     <Subtitle 
                         text1 = '01 - 1' 
                         text2 = '콘텐츠 완성도'/>
@@ -95,7 +95,7 @@ function Overview() {
                         count = '02'
                         text = '기존 비체담 웹사이트는 페이지 이동 시마다 전체 페이지를 새로 불러오는 구조로 인해 로딩 속도가 느리고 다양한 기기환경에서 레이아웃이 맞지않는 문제가 발생하고 있습니다.'/>
                     
-                    <Margin distance_w = '100%' distance_h = '30px'/>
+                    <Margin distance_w = '100%' distance_h = '100px'/>
                     <Subtitle 
                         text1 = '02 - 1' 
                         text2 = '리액트'/>
@@ -121,7 +121,7 @@ function Overview() {
                         title = '기대효과'
                         count = '03'
                         text = ''/>
-                    <Margin distance_w = '100%' distance_h = '50px'/>
+                    <Margin distance_w = '100%' distance_h = '100px'/>
                     <Subtitle 
                         text1 = '03 - 1' 
                         text2 = '사용자 접근성 및 편의성 향상'/>
