@@ -26,12 +26,12 @@
     color: white;
 }
 .home > p:nth-child(2) {
-    width: 500px;
+    width: 412px;
     margin-top: 15px;
 
     font-family: 'A2z';
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
 
     text-align: center;
 
@@ -63,8 +63,8 @@
     margin-top: 5px;
 
     font-family: 'A2z';
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: 300;
+    font-size: 10px;
 
     text-align: center;
 
@@ -74,13 +74,13 @@
 .glow {
     position: absolute;
     width: 1000px;
-    height: 1000px;
+    height: 800px;
 
     left: 50%;
     top: 15%;
     transform: translate(-50%, -50%);
     
-    background: radial-gradient(circle, rgba(40, 64, 108, 0.3) 0%, rgba(91, 141, 239, 0) 50%);
+    background: radial-gradient(circle, rgba(68, 99, 156, 0.3) 0%, rgba(91, 141, 239, 0) 50%);
     
     filter: blur(60px);
     pointer-events: none; /* 클릭 이벤트 방해 안 하게 */
