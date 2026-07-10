@@ -29,7 +29,7 @@ function App() {
 
     return (
         <div style={{ transform: `scale(${scale})`, transformOrigin: 'top center' }}>
-            <BrowserRouter basename="/bichedam_Proposal">
+            <BrowserRouter basename="/">
                 <Routes>
                     <Route path="/" element={<Home />}></Route>
                     <Route path="/Outline" element={<Outline />}></Route>
