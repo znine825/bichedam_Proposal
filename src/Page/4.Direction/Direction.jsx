@@ -10,7 +10,7 @@ import { Direction_ViewTitle } from '../../JavaScript/Contents_Text.js'
 import './Direction.css'
 import '../Page.css'
 
-function Direction() {
+function Direction({ size }) {
 
         const scrollRef = useRef(null);
         const [scrollPercent, setScrollPercent] = useState(0);
@@ -30,7 +30,7 @@ function Direction() {
         }, []);
 
     return (
-        <div>
+        <div style={{ transform: `scale(${size})`, transformOrigin: 'top center' }}>
             <Header page = '/Direction'/>
             <div className = 'body'>
                 <aside>
@@ -71,14 +71,14 @@ function Direction() {
                         text1 = '01 - 2' 
                         text2 = ' 디자인 체계 수립'/>
                     <Margin distance_w = '100%' distance_h = '30px'/>
-                    <Text text = '컬러·컴포넌트·간격 시스템을 정립하고 모든 페이지에 일관되게 적용합니다. 현재 페이지별로 상이한 디자인 요소를 통합하여 브랜드 일관성과 전문성을 강화합니다. ////다만 디자인 방향성은 충분한 의견수립 (메인 색상, 추가하고 싶은 내용 등)이 필요한 부분입니다. 따라서 추후 협의를 통해서 진행할 것을 제안드립니다.' />
+                    <Text text = '컬러·컴포넌트·간격 시스템을 정립하고 모든 페이지에 일관되게 적용합니다. 현재 페이지별로 상이한 디자인 요소를 통합하여 브랜드 일관성과 전문성을 강화합니다. ////다만 디자인 방향성은 충분한 의견 수렴(메인 색상, 추가하고 싶은 내용 등)이 필요한 부분입니다. 따라서 추후 협의를 통해 진행할 것을 제안드립니다.' />
 
                     <Margin distance_w = '100%' distance_h = '100px'/>
                     <Subtitle 
                         text1 = '01 - 3' 
                         text2 = ' 정보구조 개선'/>
                     <Margin distance_w = '100%' distance_h = '30px'/>
-                    <Text text = '기존 사이드멥을 유지하되 이 부분 또한 추후 협의를 통해 새로운 메뉴, 사이드멥을 추가하고 개선하는 방향으로 진행 할 예정입니다.' />
+                    <Text text = '기존 사이드맵 구조를 유지하되, 추후 협의를 통해 새로운 메뉴나 사이드맵 항목을 추가하며 점진적으로 개선하는 방향으로 진행할 예정입니다.' />
                     
                     <Margin distance_w = '100%' distance_h = '100px'/>
                     <Subtitle 
@@ -92,14 +92,7 @@ function Direction() {
                         text1 = '01 - 5' 
                         text2 = ' 성능 최적화'/>
                     <Margin distance_w = '100%' distance_h = '30px'/>
-                    <Text text = '현제 비체담 웹사이트를 들어가보면 굉장히 단순한 웹사이트임에도 불구하고 로딩시간이 조금 있습니다. 따라서 이미지 최적화·코드, 리액트 라우터 도입으로 로딩 속도를 대폭 개선합니다.////초기 진입 속도 향상으로 이탈률을 낮추고, 검색엔진 노출(SEO) 순위 개선 효과도 함께 기대할 수 있습니다.' />
-
-                    <Margin distance_w = '100%' distance_h = '100px'/>
-                    <Subtitle 
-                        text1 = '01 - 6' 
-                        text2 = ' 저비용 유지보수 유지'/>
-                    <Margin distance_w = '100%' distance_h = '30px'/>
-                    <Text text = '지금 웹사이트의 유지보수 비용이 거의 발생하지 않고있다고 알고있습니다. 따라서 리빌딩되는 웹사이트 또한 지금 관리되고 있는 방식 (관리자 로그인을 통해 관리) 을 구현해 추가 비용이 발생하지 않도록 하겠습니다.////다만 기존 서버를 수정할 수 없는 경우 새로운 서버를 통해 호스팅을 해야하기 때문에 사용자 방문율에 따른 비용이 발생 할 수 있습니다.' />
+                    <Text text = '현재 비체담 웹사이트에 접속해보면, 구조가 단순함에도 불구하고 로딩 시간이 다소 발생하고 있습니다. 따라서 이미지 최적화, 코드 경량화, 리액트 라우터 도입을 통해 로딩 속도를 대폭 개선하고자 합니다.////초기 진입 속도 향상으로 이탈률을 낮추고, 검색엔진 노출(SEO) 순위 개선 효과도 함께 기대할 수 있습니다.' />
                     
 
                     
@@ -119,23 +112,23 @@ function Direction() {
                         text1 = '02 - 2' 
                         text2 = ' 라우팅 / 렌더링'/>
                     <Margin distance_w = '100%' distance_h = '30px'/>
-                    <Text text = '리액트  Router 기능을 통해 렌더링 시간을 단축시킬 수 있습니다. 빠른 초기 로딩과 검색엔진 최적화(SEO)를 동시에 확보할 수 있으며, 이미지 부분에서 점진적 정적 생성을 통해 빠른 렌더링 시간을 보장합니다.' />
+                    <Text text = '리액트 Router 기능을 통해 렌더링 시간을 단축시킬 수 있습니다. 빠른 초기 로딩을 확보할 수 있으며, 이미지 부분에서 점진적 정적 생성을 통해 빠른 렌더링 시간을 보장합니다.' />
                     
                     <Margin distance_w = '100%' distance_h = '100px'/>
                     <Subtitle 
                         text1 = '02 - 3' 
                         text2 = ' 배포'/>
                     <Margin distance_w = '100%' distance_h = '30px'/>
-                    <Text text = '지금 배포되고있는 서버 자체 수정이 불가능할 경우, AWS를 통해 배포 할 수 있습니다. AWS를 통해 배포할 경우 도메인·SSL 설정을 통해 HTTP/HTTPS 혼용 문제를 해결 할 수 있습니다.' />
+                    <Text text = '현재 배포되고 있는 서버 자체를 수정할 수 없는 경우, AWS를 통해 배포할 수 있습니다. AWS로 배포할 경우 도메인·SSL 설정을 통해 HTTP/HTTPS 혼용 문제도 함께 해결할 수 있습니다.' />
                     
                     <Margin distance_w = '100%' distance_h = '100px'/>
                     <Subtitle 
                         text1 = '02 - 4' 
                         text2 = '콘텐츠 관리'/>
                     <Margin distance_w = '100%' distance_h = '30px'/>
-                    <Text text = '공지사항, 보도자료 등에 글을 쓰기위해선 “bichedam.co.kr/wp-admin” 에 로그인을 통해 작업이 이루어지는 것으로 알고있습니다.  관리자 주소를 바꾸지 않아서 누구나 로그인을 시도할 수 있고 주 해킹 타겟이 되는 이유중에 하나입니다.' />
-                    <Text text = '//지금의 방식이 아닌 외부 CMS를 이용하게 되면 해킹의 위험에서 벗어날 수 있고, 어떤 외부 CMS를 이용하냐에 따라 지금 보다 더 높은 퀄리티의 글을 작성 할 수 있게됩니다.' />
-                    <Text text = '//CMS 에는 여러 종류가 있습니다.// - Notion// - 그누보드 ( 지금 사용하는 것과 굉장히 유사 )// - 깃허브 ( 개발지식이 약간 필요 )' />
+                    <Text text = '공지사항, 보도자료 등에 글을 작성하기 위해서는 "bichedam.co.kr/wp-admin"에 로그인하여 작업이 이루어지는 것으로 알고 있습니다. 관리자 페이지 주소가 기본값 그대로 노출되어 있어 누구나 로그인을 시도할 수 있으며, 이는 주요 해킹 타깃이 되는 이유 중 하나입니다.' />
+                    <Text text = '//현재 방식 대신 외부 CMS를 도입하면 해킹 위험에서 벗어날 수 있으며, 어떤 CMS를 선택하는지에 따라 지금보다 더 높은 퀄리티의 글을 작성할 수 있게 됩니다.' />
+                    <Text text = '//CMS에는 여러 종류가 있습니다.// - Notion// - 그누보드 (현재 사용 중인 방식과 유사)// - 깃허브 (약간의 개발 지식 필요)'/>
                     <Text text = '//어떤 CMS를 사용할지는 추후 협의를 통해 정할 것을 제안드립니다.' />
                     
                     <Margin distance_w = '100%' distance_h = '200px'/>

@@ -59,7 +59,7 @@ export const Diagnosis_ViewTitle = [
 export const Direction_ViewTitle = [
     {
         title : '핵심 목표',
-        text : ['전체적인 버그 수정', '디자인 체계 수립', '정보구조 개선', '반응형 완전 대응', '성능 최적화', '저비용 유지보수 유지']
+        text : ['전체적인 버그 수정', '디자인 체계 수립', '정보구조 개선', '반응형 완전 대응', '성능 최적화']
     },
     {
         title : '기술스택 / 개발환경',
