@@ -1,5 +1,5 @@
-import { createRoot } from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ReactDOM, { createRoot } from 'react-dom/client'
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 import './index.css'
@@ -29,7 +29,7 @@ function App() {
 
     return (
         <div style={{ transform: `scale(${scale})`, transformOrigin: 'top center' }}>
-            <BrowserRouter basename="/">
+            <HashRouter>
                 <Routes>
                     <Route path="/" element={<Home />}></Route>
                     <Route path="/Outline" element={<Outline />}></Route>
@@ -39,9 +39,9 @@ function App() {
                     <Route path="/Design" element={<Design />}></Route>
                     <Route path="/Schedule" element={<Schedule />}></Route>
                 </Routes>
-            </BrowserRouter>
+            </HashRouter>
         </div>
     );
 }
 
-createRoot(document.getElementById('root')).render(<App />)
+ReactDOM.createRoot(document.getElementById("root")).render(<App />)
