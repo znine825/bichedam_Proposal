@@ -20,7 +20,7 @@ function Home() {
                         <p>제안서 보기</p>
                     </div>
                 </Link>
-                <p>2027.07.06 - 2027.07.06</p>
+                <p>2027.07.06 - 2027.07.10</p>
                 <p>© 2026 DETAILED. ALL Rights Reserved.</p>
             </div>
             <div className = 'glow'></div>

@@ -81,3 +81,18 @@ export const Design_ViewTitle = [
         text : ['PC', 'Tablet', 'Mobile']
     }
 ]
+
+export const Schedule_ViewTitle = [
+    {
+        title : '전체 프로젝트 기간',
+        text : ['']
+    },
+    {
+        title : '단게별 일정',
+        text : ['기획', '디자인', '프론트엔드 개발', '백엔드 개발', 'QA / 테스트', '오픈 / 배포']
+    },
+    {
+        title : '비용',
+        text : ['비용 산정 기준', '상세 비용']
+    }
+]

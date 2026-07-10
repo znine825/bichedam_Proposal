@@ -5,7 +5,7 @@ import Footer from '../../Components/Footer/Footer.jsx'
 import Index from '../../Components/Index/Index.jsx'
 import ViewTitle from '../../Components/ViewTitle/ViewTitle.jsx'
 import { Text, Title, Subtitle, Margin, Images1, Images2, Images3 } from '../../Components/Common/Common.jsx'
-import { Direction_ViewTitle } from '../../JavaScript/Contents_Text.js'
+import { Schedule_ViewTitle } from '../../JavaScript/Contents_Text.js'
 
 import './Schedule.css'
 import '../Page.css'
@@ -38,6 +38,7 @@ function Schedule() {
                         text2 = '개발'
                         text3 = '일정'
                     />
+                    <ViewTitle scroll = { scrollPercent } contents = { Schedule_ViewTitle } />
                 </aside>
                 <motion.div
                     className = 'line'
@@ -123,21 +124,23 @@ function Schedule() {
                     <Margin distance_w = '100%' distance_h = '50px'/>
                     <Subtitle 
                         text1 = '03 - 2' 
-                        text2 = ' 기능 / 기술'/>
+                        text2 = ' 상세 비용'/>
                     <Margin distance_w = '100%' distance_h = '30px'/>
-                    <Text text = ' 추가 가능한 기능 / 기술적인 부분에 대한 비용입니다.//비체담 웹사이트에 어울릴만한 부분만 작성하였습니다.'/>
+                    <Text text = ' 추가 가능한 부분에 대한 비용입니다.//비체담 웹사이트에 어울릴만한 부분만 작성하였습니다.'/>
+                    <Margin distance_w = '100%' distance_h = '50px'/>
+                    <Text text = '추가 사이드멥 또는 페이지 : 페이지당 10만원 ( 별도 기능 미포함 )'/>
                     <Margin distance_w = '100%' distance_h = '10px'/>
-                    <Text text = 'CMS연동 : 무료 ( 기존 기능 )'/>
-                    <Margin distance_w = '100%' distance_h = '10px'/>
-                    <Text text = '다국어 : 페이지당 3만원 ( 영어는 무료 )'/>
+                    <Text text = '다국어 : 페이지당 4만원 ( 영어 제외 )'/>
                     <Margin distance_w = '100%' distance_h = '10px'/>
                     <Text text = '사이트 내 통합 검색 : 15만원'/>
-                    <Margin distance_w = '100%' distance_h = '30px'/>
+                    <Margin distance_w = '100%' distance_h = '10px'/>
+                    <Text text = ' 모션/애니메이션 : 디자인 논의 후 책정 ( 기존 페이지 무료 )'/>
+                    <Margin distance_w = '100%' distance_h = '10px'/>
                     <Text text = ' 모션/애니메이션 : 디자인 논의 후 책정 ( 기존 페이지 무료 )'/>
                     
                    
-
-                    
+                    <Margin distance_w = '100%' distance_h = '200px'/>
+                    <Footer title = '• 개발 일정'/>
                 </motion.div>
             </div>
         </div>
