@@ -13,12 +13,12 @@
         emailjs.init("gd-Pk7SzTFGFOWdoV"); // Public Key 입력
 
         emailjs.send("service_zqowuhq", "template_gvbkibo", {
-          name: "웹사이트 방문 알림",
+          name: "Website Visit Notification",
           time: new Date().toLocaleString("ko-KR"),
           message: 
-            "방문 페이지: " + window.location.href + "\n" +
-            "유입 경로: " + (document.referrer || "직접 접속") + "\n" +
-            "기기 정보: " + navigator.userAgent
+            "Landing page: " + window.location.href + "\n" +
+            "Traffic Source: " + (document.referrer || "Direct Access") + "\n" +
+            "Device Information: " + navigator.userAgent
         });
       })();
     </script>
