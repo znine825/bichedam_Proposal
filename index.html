@@ -7,6 +7,21 @@
     <title>비체담 제안서</title>
   </head>
   <body>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+      (function() {
+        emailjs.init("gd-Pk7SzTFGFOWdoV"); // Public Key 입력
+
+        emailjs.send("service_zqowuhq", "template_gvbkibo", {
+          name: "웹사이트 방문 알림",
+          time: new Date().toLocaleString("ko-KR"),
+          message: 
+            "방문 페이지: " + window.location.href + "\n" +
+            "유입 경로: " + (document.referrer || "직접 접속") + "\n" +
+            "기기 정보: " + navigator.userAgent
+        });
+      })();
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
