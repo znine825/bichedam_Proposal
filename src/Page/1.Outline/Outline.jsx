@@ -10,10 +10,10 @@ import { Outline_Text } from '../../JavaScript/Contents_Text.js'
 import './Outline.css'
 import '../Page.css'
 
-function Outline() {
+function Outline({ size }) {
 
     return (
-        <div>
+        <div style={{ transform: `scale(${size})`, transformOrigin: 'top center' }}>
             <Header page = '/'/>
             <div className = 'body'>
                 <aside>
@@ -47,6 +47,9 @@ function Outline() {
                             <Margin distance_w = '100%' distance_h = '100px'/>
                         </div>
                     ))}
+
+                    <Margin distance_w = '100%' distance_h = '200px'/>
+                    <Footer title = '• 제안 목차'/>
                 </motion.div>  
             </div>
         </div>

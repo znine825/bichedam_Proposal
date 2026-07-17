@@ -1,5 +1,5 @@
-import { createRoot } from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ReactDOM, { createRoot } from 'react-dom/client'
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 import './index.css'
@@ -28,20 +28,20 @@ function App() {
     }, []);
 
     return (
-        <div style={{ transform: `scale(${scale})`, transformOrigin: 'top center' }}>
-            <BrowserRouter basename="/bichedam_Proposal">
+        <div>
+            <HashRouter>
                 <Routes>
-                    <Route path="/" element={<Home />}></Route>
-                    <Route path="/Outline" element={<Outline />}></Route>
-                    <Route path="/Overview" element={<Overview />}></Route>
-                    <Route path="/Diagnosis" element={<Diagnosis />}></Route>
-                    <Route path="/Direction" element={<Direction />}></Route>
-                    <Route path="/Design" element={<Design />}></Route>
-                    <Route path="/Schedule" element={<Schedule />}></Route>
+                    <Route path="/" element={<Home size = { scale }/>}></Route>
+                    <Route path="/Outline" element={<Outline size = { scale }/>}></Route>
+                    <Route path="/Overview" element={<Overview size = { scale } />}></Route>
+                    <Route path="/Diagnosis" element={<Diagnosis size = { scale } />}></Route>
+                    <Route path="/Direction" element={<Direction size = { scale } />}></Route>
+                    <Route path="/Design" element={<Design size = { scale } />}></Route>
+                    <Route path="/Schedule" element={<Schedule size = { scale } />}></Route>
                 </Routes>
-            </BrowserRouter>
+            </HashRouter>
         </div>
     );
 }
 
-createRoot(document.getElementById('root')).render(<App />)
+ReactDOM.createRoot(document.getElementById("root")).render(<App />)

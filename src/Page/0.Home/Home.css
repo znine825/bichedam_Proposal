@@ -86,3 +86,19 @@
     pointer-events: none; /* 클릭 이벤트 방해 안 하게 */
     z-index: -1;
 }
+
+.mobileWarning {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.mobileWarning > p {
+    width: 200px;
+    font-family: 'A2z';
+    font-weight: 600;
+    font-size: 20px;
+
+    text-align: center;
+    color: white;
+}
