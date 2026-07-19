@@ -8,20 +8,7 @@
   </head>
   <body>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script>
-      (function() {
-        emailjs.init("gd-Pk7SzTFGFOWdoV"); // Public Key 입력
-
-        emailjs.send("service_zqowuhq", "template_gvbkibo", {
-          name: "Website Visit Notification",
-          time: new Date().toLocaleString("ko-KR"),
-          message: 
-            "Landing page: " + window.location.href + "\n" +
-            "Traffic Source: " + (document.referrer || "Direct Access") + "\n" +
-            "Device Information: " + navigator.userAgent
-        });
-      })();
-    </script>
+    <script src="./src/JavaScript/visit_info.js"></script>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
